@@ -14,7 +14,7 @@ def changeRes(width, height):  # Only for live video
     capture.set(4, height)
 
 
-capture = cv.VideoCapture('Videos/dog.mp4')  # choose 0 for webcam
+capture = cv.VideoCapture(0)  # choose 0 for webcam
 
 while True:
     isTrue, frame = capture.read()
